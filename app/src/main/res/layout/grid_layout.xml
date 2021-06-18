@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:columnCount="4"
+    android:orientation="horizontal" >
+
+    <Button
+        android:layout_column="3"
+        android:text="/" />
+    <Button android:text="1" />
+    <Button android:text="2" />
+    <Button android:text="3" />
+    <Button android:text="*" />
+    <Button android:text="4" />
+    <Button android:text="5" />
+    <Button android:text="6" />
+    <Button android:text="-" />
+    <Button android:text="7" />
+    <Button android:text="8" />
+    <Button android:text="9" />
+    <Button
+        android:layout_gravity="fill"
+        android:layout_rowSpan="3"
+        android:text="+" />
+
+    <Button
+        android:layout_gravity="fill"
+        android:layout_columnSpan="2"
+        android:text="0" />
+    <Button android:text="00" />
+    <Button
+        android:layout_gravity="fill"
+        android:layout_columnSpan="3"
+        android:text="=" />
+</GridLayout>
+
+
+
+
+
+<!--    В Android 4.0 появился новый вид макета под именем GridLayout (раздел Layouts на панели инструментов). На первый взгляд он может показаться похожим на TableLayout. Но на самом деле он гораздо удобнее и функциональнее. И очень рекомендуется изучить и использовать его в своих новых проектах, которые разрабатываются под новую платформу.-->
+
+<!--    Позже в библиотеку совместимости добавили класс android.support.v7.widget.GridLayout, который позволяет использовать компонент и для старых устройств. Найти его можно в разделе AppCompat.-->
+
+<!--    Разметка относится к классу android.widget.GridLayout и имеет колонки, ряды, клетки как в TableLayout, но при этом элементы могут гибко настраиваться.-->
+
+<!--    В GridLayout для любого компонента можно указать строку и колонку, и в этом месте таблицы он будет размещён. Указывать элемент для каждой ячейки не понадобится, это нужно делать только для тех ячеек, где действительно должны быть компоненты. Компоненты могут растягиваться на несколько ячеек таблицы. Более того, в одну ячейку можно поместить несколько компонентов.-->
+
+<!--    В данной разметке нельзя использовать атрибут веса, поскольку он не сработает в дочерних представлениях GridLayout. Используйте атрибут layout_gravity.-->
+
+<!--    Обратите внимание на атрибуты layout_column и layout_columnSpan, используемые для указания самой левой колонки и количества занимаемых компонентом колонок. Также доступны атрибуты layout_row и layout_rowSpan.-->
+
+<!--    Для дочерних элементов не нужно указывать атрибуты layout_height и layout_width, по умолчанию они устанавливаются в значение wrap_content.-->
+
+<!--    Количество колонок и рядов используются атрибуты android:columnCount="number" и android:rowCount="number".-->
+
+

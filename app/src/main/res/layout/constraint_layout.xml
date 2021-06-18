@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="ru.alexanderklimov.as22.MainActivity">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="147dp" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginTop="124dp"
+        android:text="Hello World!"
+        app:layout_constraintDimensionRatio="h,2:1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline2"
+        tools:layout_constraintLeft_creator="1"
+        tools:layout_constraintRight_creator="1" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+<!--    Если есть желание работать через XML, то следует запомнить очень много атрибутов,
+например, для выравнивания относительно друг друга:-->
+
+<!--    app:layout_constraintStart_toStartOf="@id/view"-->
+<!--    app:layout_constraintLeft_toLeftOf="@id/view"-->
+<!--    app:layout_constraintEnd_toEndOf="@id/view"-->
+<!--    app:layout_constraintRight_toRightOf="@id/view"-->
+<!--    app:layout_constraintTop_toTopOf="@id/view"-->
+<!--    app:layout_constraintBaseline_toBaselineOf="@id/view"-->
+<!--    app:layout_constraintBottom_toBottomOf="@id/view"-->
+<!--    app:layout_constraintStart_toEndOf="@id/view"-->
+<!--    app:layout_constraintLeft_toRightOf="@id/view"-->
+<!--    app:layout_constraintEnd_toStartOf="@id/view"-->
+<!--    app:layout_constraintRight_toLeftOf="@id/view"-->
+<!--    app:layout_constraintTop_toBottomOf="@id/view"-->
+<!--    app:layout_constraintBottom_toTopOf="@id/view"-->
+<!--    Атрибут app:layout_constraintHorizontal_bias используется float-значения от 0 до 1,
+для выравнивания по оси.-->
+
+<!--    Атрибут app:layout_constraintDimensionRatio="4:3" указывает, что нужно использовать
+данные пропорции по высоте и ширине для данного компонента. Также встречается модификация
+атрибута app:layout_constraintDimensionRatio="H, 1:1".-->
+
+
+
+
+
+

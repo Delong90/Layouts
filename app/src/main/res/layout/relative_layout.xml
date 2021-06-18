@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_toLeftOf="@+id/button"
+        android:hint="Введите имя кота..." >
+    </EditText>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:text="Нажми нежно!" >
+    </Button>
+
+</RelativeLayout>
+
+<!--    Важные атрибуты, которые связаны с родителем.-->
+
+<!--    android:layout_alignParentBottom - выравнивание относительно нижнего края родителя-->
+<!--    android:layout_alignParentLeft - выравнивание относительно левого края родителя-->
+<!--    android:layout_alignParentRight - выравнивание относительно правого края родителя-->
+<!--    android:layout_alignParentTop - выравнивание относительно верхнего края родителя-->
+<!--    android:layout_centerInParent - выравнивание по центру родителя по вертикали и горизонтали-->
+<!--    android:layout_centerHorizontal - выравнивание по центру родителя по горизонтали-->
+<!--    android:layout_centerVertical - выравнивание по центру родителя по вертикали-->
+
+
+<!--    Компонент можно размещать не только относительно родителя, но и относительно других компонентов. Для этого все компоненты должны иметь свой идентификатор, по которому их можно будет отличать друг от друга. В этом случае вы можете задействовать другие атрибуты.-->
+
+<!--    android:layout_above - размещается над указанным компонентом-->
+<!--    android:layout_below - размещается под указанным компонентом-->
+<!--    android:layout_alignLeft - выравнивается по левому краю указанного компонента-->
+<!--    android:layout_alignRight - выравнивается по правому краю указанного компонента-->
+<!--    android:layout_alignTop - выравнивается по верхнему краю указанного компонента-->
+<!--    android:layout_alignBottom - выравнивается по нижнему краю указанного компонента-->
+<!--    android:layout_toLeftOf - правый край компонента размещается слева от указанного компонента-->
+<!--    android:layout_toRightOf - левый край компонент размещается справа от указанного компонента-->
+
+
+<!--    Чтобы компоненты "не прилипали" друг к другу, используются атрибуты, добавляющие пространство между ними.-->
+
+<!--    android:layout_marginTop-->
+<!--    android:layout_marginBottom-->
+<!--    android:layout_marginLeft-->
+<!--    android:layout_marginRight-->

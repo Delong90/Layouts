@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/swipeRefreshLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/textView"
+            android:text="Hello Kitty"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:gravity="center"/>
+    </ScrollView>
+
+</androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+
+<!--    http://developer.alexanderklimov.ru/android/layout/constraintlayout.php-->
+
+<!--    implementation "androidx.swiperefreshlayout:swiperefreshlayout:1.1.0"-->
+
+<!--    В методах setColorSchemeColors() или setColorSchemeResources() следует указать
+используемые цвета.-->
+
+<!--    Компонент достаточно интересный с занимательной анимацией. Вначале анимация
+представляла собой цветные полоски под заголовком программы. Позже анимацию заменили
+в стиле Material Design, теперь это маленький кружочек, внутри которого крутятся
+цветные линии (или чёрная линия, если не использовать метод setColorSchemeResources()
+со цветами).-->
+
+
+<!--    import android.os.Bundle-->
+<!--    import android.os.Handler-->
+<!--    import androidx.appcompat.app.AppCompatActivity-->
+<!--    import kotlinx.android.synthetic.main.activity_main.*-->
+<!--    import java.util.*-->
+
+<!--    class MainActivity : AppCompatActivity() {-->
+
+<!--    private lateinit var random: Random-->
+<!--    private lateinit var handler: Handler-->
+<!--    private lateinit var runnable: Runnable-->
+
+<!--    override fun onCreate(savedInstanceState: Bundle?) {-->
+<!--    super.onCreate(savedInstanceState)-->
+
+<!--    setContentView(R.layout.activity_main)-->
+
+<!--    random = Random()-->
+<!--    handler = Handler()-->
+
+<!--    swipeRefreshLayout.setOnRefreshListener {-->
+<!--    // Initialize a new Runnable-->
+<!--    runnable = Runnable {-->
+<!--    // Update the text view text with a random number-->
+<!--    textView.text = "Котика пора кормить. Его не кормили уже ${1 + random.nextInt(10)} минут"-->
+
+<!--    // Hide swipe to refresh icon animation-->
+<!--    swipeRefreshLayout.isRefreshing = false-->
+<!--    }-->
+
+<!--    // Execute the task after specified time-->
+<!--    handler.postDelayed(-->
+<!--    runnable, 3000.toLong()-->
+<!--    )-->
+<!--    }-->
+
+<!--    swipeRefreshLayout.setColorSchemeResources(-->
+<!--    android.R.color.holo_blue_bright,-->
+<!--    android.R.color.holo_green_light,-->
+<!--    android.R.color.holo_orange_light,-->
+<!--    android.R.color.holo_red_light-->
+<!--    )-->
+<!--    }-->
+<!--    }-->
+<!--    Запустите пример и потяните экран сверх вниз, чтобы увидеть эффект обновления данных.-->

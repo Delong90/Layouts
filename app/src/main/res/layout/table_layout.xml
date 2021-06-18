@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+        <TableLayout
+            android:id="@+id/tablelayout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+            <TableRow>
+                <TextView
+                    android:text="Щелкните на кнопке Усадка, чтобы увидеть, как длинный текст может уместиться в ячейке таблицы"
+                    android:padding="3dip" />
+            </TableRow>
+        </TableLayout>
+        <Button
+            android:id="@+id/toggle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Усадка" />
+    </LinearLayout>
+</ScrollView>
+
+
+<!--    public class TableActivity extends Activity {-->
+
+<!--    private boolean mShrink;-->
+
+<!--    @Override-->
+<!--    public void onCreate(Bundle savedInstanceState) {-->
+<!--    super.onCreate(savedInstanceState);-->
+<!--    setContentView(R.layout.activity_test);-->
+
+<!--    final TableLayout table = (TableLayout) findViewById(R.id.tablelayout);-->
+<!--    Button button = (Button) findViewById(R.id.toggle);-->
+<!--    button.setOnClickListener(new Button.OnClickListener() {-->
+<!--    public void onClick(View v) {-->
+<!--    mShrink = !mShrink;-->
+<!--    table.setColumnShrinkable(0, mShrink);-->
+<!--    }-->
+<!--    });-->
+<!--    mShrink = table.isColumnShrinkable(0);-->
+<!--    }-->
+<!--    }-->

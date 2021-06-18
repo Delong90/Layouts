@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <ListView
+        android:id="@+id/listView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:id="@+id/layout_bottom_bar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="#222222"
+        android:clickable="true"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="5dip" >
+
+        <Button
+            android:id="@+id/button1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#000000"
+            android:gravity="center"
+            android:padding="5dip"
+            android:text="Неподвижная часть"
+            android:textColor="#FFFFFF" />
+
+    </LinearLayout>
+
+</RelativeLayout>
+
+
+
+
+
+
+<!--    Создаём неподвижную полоску-->
+<!--    С помощью RelativeLayout можно создать неподвижную полоску внизу
+экрана, которая не будет прокручиваться вместе со списком. Для этого используется
+атрибут android:layout_alignParentBottom и родственные ему атрибуты для верхней части.
+Вот простой пример со списком.-->
+
+
+<!--    package ru.alexanderklimov.relativelayout;-->
+
+<!--    import android.app.Activity;-->
+<!--    import android.os.Bundle;-->
+<!--    import android.widget.ArrayAdapter;-->
+<!--    import android.widget.ListView;-->
+
+<!--    public class RelativeLayoutActivity extends Activity {-->
+
+<!--    @Override-->
+<!--    public void onCreate(Bundle savedInstanceState) {-->
+<!--    super.onCreate(savedInstanceState);-->
+<!--    setContentView(R.layout.activity_main);-->
+
+<!--    ListView listView = (ListView) findViewById(R.id.listView1);-->
+
+<!--    // определяем массив типа String-->
+<!--    final String[] catnames = new String[] { "Рыжик", "Барсик", "Мурзик",-->
+<!--    "Мурка", "Васька", "Томасина", "Кристина", "Пушок", "Дымка",-->
+<!--    "Кузя", "Китти", "Масяня", "Симба" };-->
+
+<!--    // используем адаптер данных-->
+<!--    ArrayAdapter<String> adapter = new ArrayAdapter<String>(this,-->
+<!--    android.R.layout.simple_list_item_1, catnames);-->
+
+<!--    listView.setAdapter(adapter);-->
+<!--    }-->
+<!--    }-->
